@@ -1,0 +1,912 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="36.00" TargetName="Kinetix_Motion_Preempt" TargetType="Controller" ContainsContext="false" ExportDate="Thu Nov 12 16:47:38 2026" ExportOptions="NoRawData L5KData DecoratedData ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Target" Name="Kinetix_Motion_Preempt" ProcessorType="5069-L306ERM" MajorRev="36" MinorRev="11" ProjectCreationDate="Wed Oct 28 12:25:31 2026" LastModifiedDate="Wed Nov 11 16:50:19 2026" SFCExecutionControl="CurrentActive" SFCRestartPosition="MostRecent" SFCLastScan="DontScan" ProjectSN="16#70db_628e"
+ MatchProjectToController="false" CanUseRPIFromProducer="false" InhibitAutomaticFirmwareUpdate="0" PassThroughConfiguration="EnabledWithAppend" DownloadProjectDocumentationAndExtendedProperties="true" DownloadProjectCustomProperties="true" ReportMinorOverflow="false" EtherNetIPMode="A1/A2: Dual-IP" AutoDiagsEnabled="true" WebServerEnabled="false">
+<RedundancyInfo Enabled="false" KeepTestEditsOnSwitchOver="false"/>
+<Security Code="0" ChangesToDetect="16#ffff_ffff_ffff_ffff"/>
+<SafetyInfo/>
+<DataTypes/>
+<Modules>
+<Module Name="Local" CatalogNumber="5069-L306ERM" Vendor="1" ProductType="14" ProductCode="189" Major="36" Minor="11" ParentModule="Local" ParentModPortId="1" Inhibited="false" MajorFault="true"
+>
+<EKey State="Disabled"/>
+<Ports>
+<Port Id="1" Address="0" Type="5069" Upstream="false">
+<Bus Size="9"/>
+</Port>
+<Port Id="3" Type="Ethernet" Upstream="false">
+<Bus/>
+</Port>
+<Port Id="4" Type="Ethernet" Upstream="false">
+<Bus/>
+</Port>
+</Ports>
+</Module>
+<Module Name="Input_Module" CatalogNumber="5069-IB16/A" Vendor="1" ProductType="7" ProductCode="390" Major="2" Minor="1" ParentModule="Local" ParentModPortId="1" Inhibited="false" MajorFault="false"
+ SafetyEnabled="false" AutoDiagsEnabled="true">
+<EKey State="CompatibleModule"/>
+<Ports>
+<Port Id="1" Address="1" Type="5069" Upstream="true"/>
+</Ports>
+<Communications>
+<ConfigTag ConfigSize="64" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[68,160,[13,13,0],[13,13,0],[13,13,0],[13,13,0],[13,13,0],[13,13,0],[13,13,0],[13,13,0],[13,13,0],[13,13,0],[13,13,0],[13,13,0],[13,13,0],[13,13,0],[13,13,0],[13
+		,13,0]]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="AB:5000_DI16:C:0">
+<StructureMember Name="Pt00" DataType="AB:5000_DI_Channel:C:0">
+<DataValueMember Name="InputOffOnFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+<DataValueMember Name="InputOnOffFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+</StructureMember>
+<StructureMember Name="Pt01" DataType="AB:5000_DI_Channel:C:0">
+<DataValueMember Name="InputOffOnFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+<DataValueMember Name="InputOnOffFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+</StructureMember>
+<StructureMember Name="Pt02" DataType="AB:5000_DI_Channel:C:0">
+<DataValueMember Name="InputOffOnFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+<DataValueMember Name="InputOnOffFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+</StructureMember>
+<StructureMember Name="Pt03" DataType="AB:5000_DI_Channel:C:0">
+<DataValueMember Name="InputOffOnFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+<DataValueMember Name="InputOnOffFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+</StructureMember>
+<StructureMember Name="Pt04" DataType="AB:5000_DI_Channel:C:0">
+<DataValueMember Name="InputOffOnFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+<DataValueMember Name="InputOnOffFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+</StructureMember>
+<StructureMember Name="Pt05" DataType="AB:5000_DI_Channel:C:0">
+<DataValueMember Name="InputOffOnFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+<DataValueMember Name="InputOnOffFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+</StructureMember>
+<StructureMember Name="Pt06" DataType="AB:5000_DI_Channel:C:0">
+<DataValueMember Name="InputOffOnFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+<DataValueMember Name="InputOnOffFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+</StructureMember>
+<StructureMember Name="Pt07" DataType="AB:5000_DI_Channel:C:0">
+<DataValueMember Name="InputOffOnFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+<DataValueMember Name="InputOnOffFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+</StructureMember>
+<StructureMember Name="Pt08" DataType="AB:5000_DI_Channel:C:0">
+<DataValueMember Name="InputOffOnFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+<DataValueMember Name="InputOnOffFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+</StructureMember>
+<StructureMember Name="Pt09" DataType="AB:5000_DI_Channel:C:0">
+<DataValueMember Name="InputOffOnFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+<DataValueMember Name="InputOnOffFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+</StructureMember>
+<StructureMember Name="Pt10" DataType="AB:5000_DI_Channel:C:0">
+<DataValueMember Name="InputOffOnFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+<DataValueMember Name="InputOnOffFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+</StructureMember>
+<StructureMember Name="Pt11" DataType="AB:5000_DI_Channel:C:0">
+<DataValueMember Name="InputOffOnFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+<DataValueMember Name="InputOnOffFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+</StructureMember>
+<StructureMember Name="Pt12" DataType="AB:5000_DI_Channel:C:0">
+<DataValueMember Name="InputOffOnFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+<DataValueMember Name="InputOnOffFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+</StructureMember>
+<StructureMember Name="Pt13" DataType="AB:5000_DI_Channel:C:0">
+<DataValueMember Name="InputOffOnFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+<DataValueMember Name="InputOnOffFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+</StructureMember>
+<StructureMember Name="Pt14" DataType="AB:5000_DI_Channel:C:0">
+<DataValueMember Name="InputOffOnFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+<DataValueMember Name="InputOnOffFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+</StructureMember>
+<StructureMember Name="Pt15" DataType="AB:5000_DI_Channel:C:0">
+<DataValueMember Name="InputOffOnFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+<DataValueMember Name="InputOnOffFilter" DataType="SINT" Radix="Decimal" Value="13"/>
+</StructureMember>
+</Structure>
+</Data>
+</ConfigTag>
+<Connections>
+<Connection Name="InputData" RPI="5000" Type="StandardDataDriven" OutputSize="0" InputSize="68" EventID="0" ProgrammaticallySendEventTrigger="false" Priority="Scheduled" InputConnectionType="Multicast" InputProductionTrigger="Cyclic" ConnectionPath="20 04 24 a0 2c c7 2c 9a"
+ InputTagSuffix="I">
+<InputTag ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="Decorated">
+<Structure DataType="AB:5000_DI16:I:0">
+<DataValueMember Name="RunMode" DataType="BOOL" Value="1"/>
+<DataValueMember Name="ConnectionFaulted" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DiagnosticActive" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DiagnosticSequenceCount" DataType="SINT" Radix="Decimal" Value="0"/>
+<StructureMember Name="Pt00" DataType="CHANNEL_DI:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Uncertain" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="Pt01" DataType="CHANNEL_DI:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Uncertain" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="Pt02" DataType="CHANNEL_DI:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Uncertain" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="Pt03" DataType="CHANNEL_DI:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Uncertain" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="Pt04" DataType="CHANNEL_DI:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Uncertain" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="Pt05" DataType="CHANNEL_DI:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Uncertain" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="Pt06" DataType="CHANNEL_DI:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Uncertain" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="Pt07" DataType="CHANNEL_DI:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Uncertain" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="Pt08" DataType="CHANNEL_DI:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Uncertain" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="Pt09" DataType="CHANNEL_DI:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Uncertain" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="Pt10" DataType="CHANNEL_DI:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Uncertain" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="Pt11" DataType="CHANNEL_DI:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Uncertain" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="Pt12" DataType="CHANNEL_DI:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Uncertain" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="Pt13" DataType="CHANNEL_DI:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Uncertain" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="Pt14" DataType="CHANNEL_DI:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Uncertain" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="Pt15" DataType="CHANNEL_DI:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Uncertain" DataType="BOOL" Value="0"/>
+</StructureMember>
+</Structure>
+</Data>
+</InputTag>
+</Connection>
+</Connections>
+</Communications>
+<ExtendedProperties>
+<public><Vendor>Rockwell Automation/Allen-Bradley</Vendor><CatNum>5069-IB16</CatNum><ConfigID>500</ConfigID><ADDAVersion>1</ADDAVersion></public>
+</ExtendedProperties>
+</Module>
+<Module Name="K5300_Drive" CatalogNumber="2198-C1020-ERS" Vendor="1" ProductType="37" ProductCode="74" Major="13" Minor="1" ParentModule="Local" ParentModPortId="3" Inhibited="false" MajorFault="false"
+>
+<EKey State="CompatibleModule"/>
+<Ports>
+<Port Id="2" Address="192.168.1.16" Type="Ethernet" Upstream="true"/>
+</Ports>
+<Communications>
+<ConfigData ConfigSize="468">
+<Data Format="L5K">
+<![CDATA[[472,7,257,74,300549359,16,10000,33686020,1,0,0,0,0,0,0,0,0,-1027080192,0,0,0,0,0,0,0,0,0,0,0,0,0,16843009,16843009
+		,0,0,33619968,120,-65536,1045220557,0,0,0,0,1120403456,1120403456,0,1120403456,1124859904,0,0,1120403456
+		,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,257,0,0,0,8192000,8192125,67305985,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+		,0,0,0,0,778,0,10,0]]]>
+</Data>
+</ConfigData>
+<Connections>
+<Connection Name="A_MotionDiagnostics" RPI="1000" Type="DiagnosticInput" EventID="0" ProgrammaticallySendEventTrigger="false">
+<InputTag ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="Decorated">
+<Structure DataType="AB:Motion_Diagnostics:S:1">
+<DataValueMember Name="LostControllerToDriveTransmissions" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="LateControllerToDriveTransmissions" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="LostDriveToControllerTransmissions" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="LateDriveToControllerTransmissions" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="LastControllerToDriveTime" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="AverageControllerToDriveTime" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="MaximumControllerToDriveTime" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="LastDriveToControllerTime" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="AverageDriveToControllerTime" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="MaximumDriveToControllerTime" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="LastSystemClockJitter" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="AverageSystemClockJitter" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="MaximumSystemClockJitter" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="TimingStatisticsEnabled" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ControllerToDriveConnectionSize" DataType="INT" Radix="Decimal" Value="24"/>
+<DataValueMember Name="DriveToControllerConnectionSize" DataType="INT" Radix="Decimal" Value="8"/>
+<DataValueMember Name="NominalControllerToDriveTime" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="NominalDriveToControllerTime" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="CoarseUpdatePeriod" DataType="INT" Radix="Decimal" Value="2000"/>
+</Structure>
+</Data>
+</InputTag>
+</Connection>
+<Connection Name="B_MotionSync" RPI="2000" Type="MotionSync" EventID="0" ProgrammaticallySendEventTrigger="false"/>
+</Connections>
+</Communications>
+<ExtendedProperties>
+<public><Vendor>Rockwell Automation/Allen-Bradley</Vendor><CatNum>2198-C1020-ERS</CatNum><FeedbackDevice1>1</FeedbackDevice1><FeedbackDevice2>2</FeedbackDevice2><ConfigID>101</ConfigID></public>
+</ExtendedProperties>
+</Module>
+</Modules>
+<AddOnInstructionDefinitions/>
+<Tags>
+<Tag Name="Primary_Motion_Group" TagType="Base" DataType="MOTION_GROUP" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="MotionGroup">
+<MotionGroupParameters CoarseUpdatePeriod="2000" PhaseShift="0" GeneralFaultType="Non Major Fault" AutoTagUpdate="Enabled" Alternate1UpdateMultiplier="1" Alternate2UpdateMultiplier="1"/>
+</Data>
+</Tag>
+<Tag Name="Servo_Axis" TagType="Base" DataType="AXIS_CIP_DRIVE" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="Axis">
+<AxisParameters MotionGroup="Primary_Motion_Group" MotionModule="K5300_Drive:Ch1" ApplicationCatalogNumberInstance="0" ApplicationCatalogNumberVersion="0" AxisConfiguration="Position Loop" FeedbackConfiguration="Motor Feedback" MotorDataSource="Database" MotorCatalogNumber="MPL-A430P-M" Feedback1Type="Hiperface" MotorType="Rotary Permanent Magnet" MotionScalingConfiguration="Control Scaling"
+ ConversionConstant="1000.0" OutputCamExecutionTargets="0" PositionUnits="Degrees" AverageVelocityTimebase="0.25" PositionUnwind="1000000" HomeMode="Active" HomeDirection="Bi-directional Forward" HomeSequence="Switch" HomeConfigurationBits="16#0000_0000" HomePosition="0.0" HomeOffset="0.0"
+ HomeSpeed="5.0" HomeReturnSpeed="2.0" MaximumSpeed="25500.0" MaximumAcceleration="2511080.8" MaximumDeceleration="2511080.8" ProgrammedStopMode="Fast Stop" MasterInputConfigurationBits="1" MasterPositionFilterBandwidth="0.1" VelocityFeedforwardGain="100.0" AccelerationFeedforwardGain="0.0" PositionErrorTolerance="489.33624"
+ PositionLockTolerance="3.6" VelocityOffset="0.0" TorqueOffset="0.0" FrictionCompensationWindow="0.0" BacklashReversalOffset="0.0" TuningTravelLimit="0.0" TuningSpeed="0.0" TuningTorque="100.0" DampingFactor="1.0" DriveModelTimeConstant="5.09725243e-004" PositionServoBandwidth="19.514795"
+ VelocityServoBandwidth="78.05918" VelocityDroop="0.0" VelocityLimitPositive="53100.0" VelocityLimitNegative="-53100.0" VelocityThreshold="27000.0" VelocityStandstillWindow="300.0" TorqueLimitPositive="341.75082" TorqueLimitNegative="-341.75082" TorqueThreshold="307.57574" StoppingTorque="341.75082" StoppingTimeLimit="1.0"
+ LoadInertiaRatio="0.0" RegistrationInputs="2" MaximumAccelerationJerk="247275552.0" MaximumDecelerationJerk="247275552.0" DynamicsConfigurationBits="7" FeedbackUnitRatio="1.0" AccelerationLimit="7174516.5" DecelerationLimit="7174516.5" RampJerkControl="0.0" PositionIntegratorBandwidth="0.0" PositionErrorToleranceTime="0.0"
+ PositionIntegratorControl="0" VelocityErrorTolerance="14628.129" VelocityErrorToleranceTime="0.01" VelocityIntegratorControl="0" VelocityLockTolerance="300.0" SystemInertia="0.03429647" TorqueLowPassFilterBandwidth="1561.1836" TorqueNotchFilterFrequency="0.0" TorqueRateLimit="1000000.0" OvertorqueLimit="200.0" OvertorqueLimitTime="0.0"
+ UndertorqueLimit="10.0" UndertorqueLimitTime="0.0" FluxCurrentReference="0.0" CurrentError="0.0" TorqueLoopBandwidth="1000.0" FluxLoopBandwidth="1000.0" StoppingAction="Current Decel Disable" MechanicalBrakeControl="Automatic" MechanicalBrakeReleaseDelay="0.0" MechanicalBrakeEngageDelay="0.0" PowerLossThreshold="0.0"
+ InverterCapacity="0.0" ConverterCapacity="0.0" InverterOverloadAction="None" MotorOverloadAction="None" CIPAxisExceptionAction="Unsupported Unsupported Disable Disable Disable Disable Unsupported Disable Disable Disable Disable Disable Unsupported Disable Disable Disable Unsupported Unsupported Disable Unsupported Disable Disable Unsupported Disable Unsupported Disable Unsupported Unsupported Unsupported Disable Disable Disable Unsupported Disable Disable Disable Unsupported Unsupported Unsupported Unsupported Unsupported Disable Unsupported Disable Disable Disable Disable Disable Unsupported Disable Disable Disable Unsupported Unsupported Disable Disable Disable Disable Unsupported Unsupported Unsupported Disable Unsupported Unsupported" CIPAxisExceptionActionRA="Unsupported Disable Disable Unsupported Unsupported Disable Alarm Disable Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Disable Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Disable Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported" MotorOverspeedUserLimit="120.0" MotorThermalOverloadUserLimit="110.0" InverterThermalOverloadUserLimit="110.0" PositionLeadLagFilterBandwidth="0.0" PositionLeadLagFilterGain="0.0"
+ PositionNotchFilterFrequency="0.0" VelocityNegativeFeedforwardGain="0.0" BacklashCompensationWindow="0.0" TorqueLeadLagFilterBandwidth="0.0" TorqueLeadLagFilterGain="1.0" CommutationSelfSensingCurrent="100.0" MotorDeviceCode="16#0000_044a" MotorUnit="Rev" MotorPolarity="Normal" MotorRatedVoltage="230.0" MotorRatedContinuousCurrent="11.88"
+ MotorRatedPeakCurrent="47.38" MotorRatedOutputPower="2.2" MotorOverloadLimit="100.0" MotorIntegralThermalSwitch="true" MotorMaxWindingTemperature="0.0" MotorWindingToAmbientCapacitance="3115.0" MotorWindingToAmbientResistance="0.52" PMMotorResistance="0.63" PMMotorInductance="0.0033" RotaryMotorPoles="8" RotaryMotorInertia="0.00038"
+ RotaryMotorRatedSpeed="5000.0" RotaryMotorMaxSpeed="5000.0" PMMotorRatedTorque="5.99" PMMotorTorqueConstant="0.586" PMMotorRotaryVoltageConstant="35.40312" Feedback1Unit="Rev" Feedback1Polarity="Normal" Feedback1StartupMethod="Absolute" Feedback1CycleResolution="1024" Feedback1CycleInterpolation="2048" Feedback1Turns="4096"
+ Feedback1VelocityFilterBandwidth="40743.66" Feedback1AccelFilterBandwidth="0.0" PMMotorFluxSaturation="94.0 86.0 76.0 65.0 52.0 44.0 40.0 39.0" Feedback1VelocityFilterTaps="1" Feedback1AccelFilterTaps="1" ScalingSource="From Calculator" LoadType="Direct Coupled Rotary" ActuatorType="&lt;none>" TravelMode="Unlimited" PositionScalingNumerator="360.0" PositionScalingDenominator="1.0"
+ PositionUnwindNumerator="1.0" PositionUnwindDenominator="1.0" TravelRange="1000.0" MotionResolution="360000" MotionPolarity="Normal" MotorTestResistance="0.0" MotorTestInductance="0.0" TuneFriction="0.0" TuneLoadOffset="0.0" TotalInertia="0.00038" TuningSelect="Total Inertia"
+ TuningDirection="Uni-directional Forward" ApplicationType="Basic" LoopResponse="Medium" FeedbackCommutationAligned="Motor Offset" FrictionCompensationSliding="0.0" FrictionCompensationStatic="0.0" FrictionCompensationViscous="0.0" PositionLoopBandwidth="19.514795" VelocityLoopBandwidth="78.05918" VelocityIntegratorBandwidth="0.0" FeedbackSignalLossUserLimit="100.0"
+ FeedbackDataLossUserLimit="4" MotionExceptionAction="Unsupported Disable Disable Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported" SoftTravelLimitChecking="true" LoadRatio="0.0" TuneInertiaMass="0.0" SoftTravelLimitPositive="90.0" SoftTravelLimitNegative="-90.0" GainTuningConfigurationBits="16#0143" CommutationOffset="0.0" SystemBandwidth="19.514795" VelocityLowPassFilterBandwidth="0.0"
+ TransmissionRatioInput="1" TransmissionRatioOutput="1" ActuatorLead="1.0" ActuatorLeadUnit="Millimeter/Rev" ActuatorDiameter="1.0" ActuatorDiameterUnit="Millimeter" SystemAccelerationBase="2915.752" DriveModelTimeConstantBase="0.000505819" DriveRatedPeakCurrent="40.6" HookupTestDistance="1.0" HookupTestFeedbackChannel="Feedback 1"
+ LoadCoupling="Rigid" SystemDamping="1.0" CurrentVectorLimit="341.75082" CommutationPolarity="Normal" LoadObserverConfiguration="Load Observer with Velocity Estimate" LoadObserverBandwidth="312.23672" LoadObserverIntegratorBandwidth="0.0" LoadObserverFeedbackGain="0.5" AxisID="2300925305" InterpolatedPositionConfiguration="16#0000_0002" AxisUpdateSchedule="Base"
+ ProvingConfiguration="Disabled" TorqueProveCurrent="0.0" BrakeTestTorque="0.0" BrakeSlipTolerance="0.0" ZeroSpeed="1.0" ZeroSpeedTime="0.0" AdaptiveTuningConfiguration="Tracking Notch" TorqueNotchFilterHighFrequencyLimit="4000.0" TorqueNotchFilterLowFrequencyLimit="374.68405" TorqueNotchFilterTuningThreshold="5.0" CoastingTimeLimit="0.0"
+ BusOvervoltageOperationalLimit="0.0" ConnectionLossStoppingAction="Current Decel Disable" VerticalLoadControl="Disabled" CurrentLoopBandwidthScalingFactor="1.0" CurrentLoopBandwidth="1000.0" DriveRatedVoltage="230.0" MaxOutputFrequency="590.0" MotorTestDataValid="False" CommandNotchFilterFrequency="0.0" CommandNotchFilterWidth="0.707" CommandNotchFilterDepth="0.0"
+ CommandNotchFilterGain="1.0" CommandNotchFilter2Frequency="0.0" CommandNotchFilter2Width="0.707" CommandNotchFilter2Depth="0.0" CommandNotchFilter2Gain="1.0" TorqueNotchFilter2Frequency="0.0" TorqueNotchFilter3Frequency="0.0" TorqueNotchFilter4Frequency="0.0" TorqueNotchFilterWidth="0.707" TorqueNotchFilterDepth="0.0" TorqueNotchFilterGain="1.0"
+ TorqueNotchFilter2Width="0.707" TorqueNotchFilter2Depth="0.0" TorqueNotchFilter2Gain="1.0" TorqueNotchFilter3Width="0.707" TorqueNotchFilter3Depth="0.0" TorqueNotchFilter3Gain="1.0" TorqueNotchFilter4Width="0.707" TorqueNotchFilter4Depth="0.0" TorqueNotchFilter4Gain="1.0" AdaptiveTuningTrackingNotchFilters="4" AdaptiveTuningGainScalingFactorMin="0.1"
+ TorqueLowPassFilterBandwidthMin="156.11836" TorqueNotchFilterWidthMin="0.707" TorqueNotchFilterWidthMax="0.707" HookupTestSpeed="0.0" TorqueEstimateCrossoverSpeed="6000.0" TorqueEstimateNotch1Frequency="100.0" TorqueEstimateNotch1Width="1.0" TorqueEstimateNotch1Depth="0.0" TorqueEstimateNotch1Gain="0.0" TorqueEstimateNotch2Frequency="0.0" TorqueEstimateNotch2Width="0.707"
+ TorqueEstimateNotch2Depth="0.0" TorqueEstimateNotch2Gain="1.0" TestModeConfiguration="Controller Loop Back" TestModeEnable="Enabled"/>
+</Data>
+</Tag>
+</Tags>
+<Programs>
+<Program Name="MainProgram" TestEdits="false" MainRoutineName="MainRoutine" Disabled="false" UseAsFolder="false">
+<Tags>
+<Tag Name="Drum_Circumference_In" TagType="Base" DataType="REAL" Radix="Float" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[Calculated circumfrence]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[1.88515587e+001]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="18.851559"/>
+</Data>
+</Tag>
+<Tag Name="Drum_Diameter_In" TagType="Base" DataType="REAL" Radix="Float" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[Effective drum diameter]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[6.00000000e+000]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="6.0"/>
+</Data>
+</Tag>
+<Tag Name="Fault_Reset_Trigger" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[Temporary test trigger]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Gear_Ratio" TagType="Base" DataType="REAL" Radix="Float" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[Motor turns per drum turn]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[7.00000000e+001]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="70.0"/>
+</Data>
+</Tag>
+<Tag Name="Home_Limit_Switch" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Home_Press_Duration_ms" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Home_Press_Timer" TagType="Base" DataType="TIMER" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[0,7000,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="7000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="Home_Released" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Home_Release_OSF_Storage" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Home_Reset_OSR_Storage" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Home_Reset_Pulse" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Home_Start_Request" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Home_Trigger" TagType="Alias" Radix="Decimal" AliasFor="Local:1:I.Pt02.Data" ExternalAccess="Read/Write" OpcUaAccess="None"/>
+<Tag Name="Home_Valid" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Jog_Button" TagType="Alias" Radix="Decimal" AliasFor="Local:1:I.Pt00.Data" ExternalAccess="Read/Write" OpcUaAccess="None"/>
+<Tag Name="Jog_Down_Button" TagType="Alias" Radix="Decimal" AliasFor="Local:1:I.Pt01.Data" ExternalAccess="Read/Write" OpcUaAccess="None"/>
+<Tag Name="Jog_Down_Request" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Jog_Release_OSF" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Jog_Speed_DegPerSec" TagType="Base" DataType="REAL" Radix="Float" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[Converted speed for MAJ]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[6.68379736e+000]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="6.6837974"/>
+</Data>
+</Tag>
+<Tag Name="Jog_Speed_InPerSec" TagType="Base" DataType="REAL" Radix="Float" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[Temporary simulation jog speed]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[4.99999989e-003]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.005"/>
+</Data>
+</Tag>
+<Tag Name="Jog_Stop_Request" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[1]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="1"/>
+</Data>
+</Tag>
+<Tag Name="Jog_Stop_Trigger" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Jog_Up_Request" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Machine_Enable" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[1]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="1"/>
+</Data>
+</Tag>
+<Tag Name="MAFR_Control_Tag" TagType="Base" DataType="MOTION_INSTRUCTION" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[Status storage for the MAFR instruction]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[[33554432,0,0,0,0,0,0,0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="MOTION_INSTRUCTION">
+<DataValueMember Name="FLAGS" DataType="DINT" Radix="Decimal" Value="33554432"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ER" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PC" DataType="BOOL" Value="0"/>
+<DataValueMember Name="IP" DataType="BOOL" Value="0"/>
+<DataValueMember Name="AC" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ACCEL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DECEL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TrackingMaster" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CalculatedDataAvailable" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ERR" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="STATUS" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="STATE" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="SEGMENT" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EXERR" DataType="SINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="MAH_Control_Tag" TagType="Base" DataType="MOTION_INSTRUCTION" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[33554432,0,0,0,0,0,0,0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="MOTION_INSTRUCTION">
+<DataValueMember Name="FLAGS" DataType="DINT" Radix="Decimal" Value="33554432"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ER" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PC" DataType="BOOL" Value="0"/>
+<DataValueMember Name="IP" DataType="BOOL" Value="0"/>
+<DataValueMember Name="AC" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ACCEL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DECEL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TrackingMaster" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CalculatedDataAvailable" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ERR" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="STATUS" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="STATE" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="SEGMENT" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EXERR" DataType="SINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="MAJ_Control_Tag" TagType="Base" DataType="MOTION_INSTRUCTION" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[33554432,0,0,0,0,0,0,0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="MOTION_INSTRUCTION">
+<DataValueMember Name="FLAGS" DataType="DINT" Radix="Decimal" Value="33554432"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ER" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PC" DataType="BOOL" Value="0"/>
+<DataValueMember Name="IP" DataType="BOOL" Value="0"/>
+<DataValueMember Name="AC" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ACCEL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DECEL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TrackingMaster" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CalculatedDataAvailable" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ERR" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="STATUS" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="STATE" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="SEGMENT" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EXERR" DataType="SINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="MAJ_Down_Control_Tag" TagType="Base" DataType="MOTION_INSTRUCTION" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[33554432,0,0,0,0,0,0,0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="MOTION_INSTRUCTION">
+<DataValueMember Name="FLAGS" DataType="DINT" Radix="Decimal" Value="33554432"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ER" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PC" DataType="BOOL" Value="0"/>
+<DataValueMember Name="IP" DataType="BOOL" Value="0"/>
+<DataValueMember Name="AC" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ACCEL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DECEL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TrackingMaster" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CalculatedDataAvailable" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ERR" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="STATUS" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="STATE" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="SEGMENT" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EXERR" DataType="SINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="MAM_Control_Tag" TagType="Base" DataType="MOTION_INSTRUCTION" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[33554432,0,0,0,0,0,0,0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="MOTION_INSTRUCTION">
+<DataValueMember Name="FLAGS" DataType="DINT" Radix="Decimal" Value="33554432"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ER" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PC" DataType="BOOL" Value="0"/>
+<DataValueMember Name="IP" DataType="BOOL" Value="0"/>
+<DataValueMember Name="AC" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ACCEL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DECEL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TrackingMaster" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CalculatedDataAvailable" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ERR" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="STATUS" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="STATE" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="SEGMENT" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EXERR" DataType="SINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="MAS_Control_Tag" TagType="Base" DataType="MOTION_INSTRUCTION" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[-1442840576,0,0,0,0,0,0,0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="MOTION_INSTRUCTION">
+<DataValueMember Name="FLAGS" DataType="DINT" Radix="Decimal" Value="-1442840576"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="ER" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PC" DataType="BOOL" Value="1"/>
+<DataValueMember Name="IP" DataType="BOOL" Value="0"/>
+<DataValueMember Name="AC" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ACCEL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DECEL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TrackingMaster" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CalculatedDataAvailable" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ERR" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="STATUS" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="STATE" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="SEGMENT" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EXERR" DataType="SINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="Motor_Deg_Per_Inch" TagType="Base" DataType="REAL" Radix="Float" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[Calculated conversion factor]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[1.33675952e+003]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="1336.7595"/>
+</Data>
+</Tag>
+<Tag Name="Motor_Deg_Per_Rev" TagType="Base" DataType="REAL" Radix="Float" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[Degrees per motor revolution]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[3.60000000e+002]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="360.0"/>
+</Data>
+</Tag>
+<Tag Name="MRP_Control_Tag" TagType="Base" DataType="MOTION_INSTRUCTION" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[33554432,0,0,0,0,0,0,0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="MOTION_INSTRUCTION">
+<DataValueMember Name="FLAGS" DataType="DINT" Radix="Decimal" Value="33554432"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ER" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PC" DataType="BOOL" Value="0"/>
+<DataValueMember Name="IP" DataType="BOOL" Value="0"/>
+<DataValueMember Name="AC" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ACCEL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DECEL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TrackingMaster" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CalculatedDataAvailable" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ERR" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="STATUS" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="STATE" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="SEGMENT" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EXERR" DataType="SINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="MSO_Control_Tag" TagType="Base" DataType="MOTION_INSTRUCTION" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[-1577058304,0,0,1,0,0,0,0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="MOTION_INSTRUCTION">
+<DataValueMember Name="FLAGS" DataType="DINT" Radix="Decimal" Value="-1577058304"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="ER" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PC" DataType="BOOL" Value="0"/>
+<DataValueMember Name="IP" DataType="BOOL" Value="0"/>
+<DataValueMember Name="AC" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ACCEL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DECEL" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TrackingMaster" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CalculatedDataAvailable" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ERR" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="STATUS" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="STATE" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="SEGMENT" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EXERR" DataType="SINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="Position_Move_Trigger" TagType="Alias" Radix="Decimal" AliasFor="Local:1:I.Pt03.Data" ExternalAccess="Read/Write" OpcUaAccess="None"/>
+<Tag Name="Position_Zero_OSR" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Position_Zero_Trigger" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Target_Position_Degrees" TagType="Base" DataType="REAL" Radix="Float" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[Converted target for MAM]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[2.67351894e+001]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="26.73519"/>
+</Data>
+</Tag>
+<Tag Name="Target_Position_In" TagType="Base" DataType="REAL" Radix="Float" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[Target entered in inches]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[1.99999996e-002]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.02"/>
+</Data>
+</Tag>
+<Tag Name="Winch_Position_In" TagType="Base" DataType="REAL" Radix="Float" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[Position for display and logic]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</Data>
+</Tag>
+</Tags>
+<Routines>
+<Routine Name="MainRoutine" Type="RLL">
+<RLLContent>
+<Rung Number="0" Type="N">
+<Text>
+<![CDATA[CPT(Drum_Circumference_In,3.1419265 * Drum_Diameter_In);]]>
+</Text>
+</Rung>
+<Rung Number="1" Type="N">
+<Text>
+<![CDATA[CPT(Motor_Deg_Per_Inch,(Motor_Deg_Per_Rev * Gear_Ratio) / Drum_Circumference_In);]]>
+</Text>
+</Rung>
+<Rung Number="2" Type="N">
+<Text>
+<![CDATA[CPT(Winch_Position_In,Servo_Axis.ActualPosition / Motor_Deg_Per_Inch);]]>
+</Text>
+</Rung>
+<Rung Number="3" Type="N">
+<Text>
+<![CDATA[CPT(Target_Position_Degrees,Target_Position_In * Motor_Deg_Per_Inch);]]>
+</Text>
+</Rung>
+<Rung Number="4" Type="N">
+<Text>
+<![CDATA[CPT(Jog_Speed_DegPerSec,Jog_Speed_InPerSec * Motor_Deg_Per_Inch);]]>
+</Text>
+</Rung>
+<Rung Number="5" Type="N">
+<Text>
+<![CDATA[XIC(Machine_Enable)MSO(Servo_Axis,MSO_Control_Tag);]]>
+</Text>
+</Rung>
+<Rung Number="6" Type="N">
+<Text>
+<![CDATA[XIC(Home_Trigger)RTO(Home_Press_Timer,?,?);]]>
+</Text>
+</Rung>
+<Rung Number="7" Type="N">
+<Text>
+<![CDATA[XIC(Home_Trigger)OSF(Home_Release_OSF_Storage,Home_Released);]]>
+</Text>
+</Rung>
+<Rung Number="8" Type="N">
+<Text>
+<![CDATA[XIC(Home_Released)MOVE(Home_Press_Timer.ACC,Home_Press_Duration_ms);]]>
+</Text>
+</Rung>
+<Rung Number="9" Type="N">
+<Text>
+<![CDATA[XIC(Home_Released)GT(Home_Press_Duration_ms,0)LE(Home_Press_Duration_ms,3000)OTE(Home_Start_Request);]]>
+</Text>
+</Rung>
+<Rung Number="10" Type="N">
+<Text>
+<![CDATA[XIC(Home_Press_Timer.DN)OSR(Home_Reset_OSR_Storage,Home_Reset_Pulse);]]>
+</Text>
+</Rung>
+<Rung Number="11" Type="N">
+<Text>
+<![CDATA[XIC(Home_Reset_Pulse)OTU(Home_Valid);]]>
+</Text>
+</Rung>
+<Rung Number="12" Type="N">
+<Text>
+<![CDATA[XIC(Home_Released)RES(Home_Press_Timer);]]>
+</Text>
+</Rung>
+<Rung Number="13" Type="N">
+<Text>
+<![CDATA[XIC(Machine_Enable)XIC(Home_Start_Request)XIO(Servo_Axis.JogStatus)XIO(Servo_Axis.MoveStatus)MAH(Servo_Axis,MAH_Control_Tag);]]>
+</Text>
+</Rung>
+<Rung Number="14" Type="N">
+<Text>
+<![CDATA[XIC(Machine_Enable)XIC(Jog_Button)XIO(Jog_Down_Button)OTE(Jog_Up_Request);]]>
+</Text>
+</Rung>
+<Rung Number="15" Type="N">
+<Text>
+<![CDATA[XIC(Machine_Enable)XIC(Jog_Down_Button)XIO(Jog_Button)OTE(Jog_Down_Request);]]>
+</Text>
+</Rung>
+<Rung Number="16" Type="N">
+<Text>
+<![CDATA[[XIO(Jog_Up_Request) XIO(Jog_Down_Request) ,XIC(Jog_Up_Request) XIC(Jog_Down_Request) ]OTE(Jog_Stop_Request);]]>
+</Text>
+</Rung>
+<Rung Number="17" Type="N">
+<Text>
+<![CDATA[XIC(Jog_Up_Request)MAJ(Servo_Axis,MAJ_Control_Tag,0,Jog_Speed_DegPerSec,Units per sec,100,Units per sec2,100,Units per sec2,Trapezoidal,0,0,0,0,0,0,0);]]>
+</Text>
+</Rung>
+<Rung Number="18" Type="N">
+<Text>
+<![CDATA[XIC(Jog_Down_Request)MAJ(Servo_Axis,MAJ_Down_Control_Tag,1,Jog_Speed_DegPerSec,Units per sec,100,Units per sec2,100,Units per sec2,Trapezoidal,0,0,0,0,0,0,0);]]>
+</Text>
+</Rung>
+<Rung Number="19" Type="N">
+<Text>
+<![CDATA[XIC(Jog_Stop_Request)MAS(Servo_Axis,MAS_Control_Tag,1,0,0,0,0,0,0);]]>
+</Text>
+</Rung>
+<Rung Number="20" Type="N">
+<Text>
+<![CDATA[XIC(Local:1:I.Pt04.Data)OTE(Home_Limit_Switch);]]>
+</Text>
+</Rung>
+<Rung Number="21" Type="N">
+<Text>
+<![CDATA[XIC(Machine_Enable)XIC(Servo_Axis.MotionStatus.7)XIC(Position_Move_Trigger)MAM(Servo_Axis,MAM_Control_Tag,0,Target_Position_Degrees,Jog_Speed_DegPerSec,0,100,0,100,0,0,0,0,0,0,0,0,0,0,0);]]>
+</Text>
+</Rung>
+<Rung Number="22" Type="N">
+<Text>
+<![CDATA[XIC(Fault_Reset_Trigger)MAFR(Servo_Axis,MAFR_Control_Tag);]]>
+</Text>
+</Rung>
+<Rung Number="23" Type="N">
+<Text>
+<![CDATA[XIC(Position_Zero_Trigger)ONS(Position_Zero_OSR)MRP(Servo_Axis,MRP_Control_Tag,0,0,0);]]>
+</Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+</Program>
+</Programs>
+<Tasks>
+<Task Name="MainTask" Type="CONTINUOUS" Priority="10" Watchdog="500" DisableUpdateOutputs="false" InhibitTask="false">
+<ScheduledPrograms>
+<ScheduledProgram Name="MainProgram"/>
+</ScheduledPrograms>
+</Task>
+</Tasks>
+<CST MasterID="0"/>
+<WallClockTime LocalTimeAdjustment="0" TimeZone="0"/>
+<Trends/>
+<DataLogs/>
+<TimeSynchronize Priority1="128" Priority2="128" PTPEnable="true"/>
+<EthernetPorts>
+<EthernetPort Port="1" Label="A1" PortEnabled="true"/>
+<EthernetPort Port="2" Label="A2" PortEnabled="true"/>
+</EthernetPorts>
+</Controller>
+</RSLogix5000Content>
